@@ -5,4 +5,5 @@
     <div class=date>
         <p>{{post.created_date}} by {{post.author}}</p>
     </div>
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 {%endblock%}
